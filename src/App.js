@@ -34,7 +34,7 @@ class App extends React.Component {
     }
 
     handleIncreaseQuantity = (product) => {
-        console.log("Hey please increase the qty of " , product);
+        //console.log("Hey please increase the qty of " , product);
         const { products } = this.state;
         const index = products.indexOf(product);
 
@@ -46,7 +46,7 @@ class App extends React.Component {
     }
 
     handleDecreaseQuantity = (product) => {
-        console.log("Hey please decrease the qty of " , product);
+        //console.log("Hey please decrease the qty of " , product);
         const { products } = this.state;
         const index = products.indexOf(product);
 
