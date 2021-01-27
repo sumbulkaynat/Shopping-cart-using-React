@@ -41,6 +41,9 @@ class App extends React.Component {
 
         this.db
             .collection('products')
+            // .where('price', '==' , 675)
+            // .where('title', '==' , 'Mug')
+            .orderBy('price')
             .onSnapshot((snapshot) => {
                 console.log(snapshot);
 
