@@ -45,10 +45,10 @@ class App extends React.Component {
             // .where('title', '==' , 'Mug')
             .orderBy('price')
             .onSnapshot((snapshot) => {
-                console.log(snapshot);
+                //console.log(snapshot);
 
                 snapshot.docs.map((doc) => {
-                    console.log(doc.data())
+                    //console.log(doc.data())
                 });
 
                 const products = snapshot.docs.map((doc) => {
